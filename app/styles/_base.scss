@@ -1,0 +1,174 @@
+// Base - Normalize and default styles.
+// @author 2023 ImAliTavakoli
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Main
+
+::selection {
+  text-shadow: none;
+  background: $oa-selection-bg-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;                                      // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+}
+
+html {
+  font-family: sans-serif;                                     // Change the default font family in all browsers.
+  line-height: 1.15;                                           // Correct the line height in all browsers.
+  -webkit-text-size-adjust: 100%;                              // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);               // Change the default tap highlight to be completely transparent in iOS.
+}
+
+body {
+  margin: 0;                                                   // Remove the margin in all browsers.
+
+  color: $oa-text-color;
+  font-family: $oa-font-family;
+  font-size: $oa-font-size;
+  line-height: $oa-line-height;
+  -webkit-font-smoothing: antialiased;                         // WebKit browsers
+  text-rendering: optimizeLegibility;                          // Safari and Chrome
+  -moz-osx-font-smoothing: grayscale;                          // Firefox
+  font-feature-settings: 'liga';                               // IE
+
+  background-color: $oa-bg-color;
+
+  overflow-y: scroll; // Always show the scrollbar
+}
+
+a {
+  color: $oa-text-link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
+
+hr {
+  border-color: transparent;
+  border-top: 1px solid $oa-color-neutral-hr;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc(#{$oa-spacer} * 2);
+  margin-bottom: calc(#{$oa-spacer} * .5);
+
+  color: $oa-headings-color;
+  font-family: $oa-headings-font-family;
+  font-weight: $oa-headings-font-weight;
+  line-height: $oa-headings-line-height;
+}
+
+p {
+  margin: 0 0 $oa-spacer;
+
+  font-family: $oa-font-family;
+  font-size: $oa-font-size;
+  line-height: $oa-line-height;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// No Animation
+
+@media screen and (prefers-reduced-motion: reduce){
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration:  0.001ms !important;
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Container, Button
+
+.oa-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: $oa-spacer; 
+}
+
+.oa-btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: $oa-spacer;
+  padding: calc(#{$oa-spacer} * .5); 
+}
+
+.oa-btn {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: all $oa-transition-duration;
+
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Utils
+
+.oa-m-0                            { margin:        0 !important; }
+.oa-m                              { margin:        $oa-spacer !important; }
+
+.oa-text-center                    { text-align: center !important; }

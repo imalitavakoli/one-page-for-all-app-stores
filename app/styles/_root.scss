@@ -1,0 +1,22 @@
+// Root - Root CSS variables
+// @author 2023 ImAliTavakoli
+
+
+
+
+:root {
+  --oa-selection-bg-color:             #{$oa-selection-bg-color-base};
+
+  --oa-headings-font-family:           #{$oa-headings-font-family-base};   // You may like to change it e.g. when your page is in another language.
+  --oa-font-family:                    #{$oa-font-family-base};            // You may like to change it e.g. when your page is in another language.
+  --oa-font-size:                      #{$oa-font-size-base};              // Base of font sizes. Other font sizes will be set according to this.
+  --oa-line-height:                    #{$oa-line-height-base};
+
+  --oa-headings-color:                 #{$oa-headings-color-base};
+  --oa-text-color:                     #{$oa-text-color-base};
+  --oa-text-link-color:                #{$oa-text-link-color-base};
+
+  --oa-bg-color:                       #{$oa-bg-color-base};
+
+  --oa-spacer:                         #{$oa-spacer-base};                 // Base of margins & paddings. Other spaces will be set according to this.
+}

@@ -1,0 +1,13 @@
+/*
+ * OnePageForAllAppStores
+ *
+ * @version v1.0.0
+ * @author 2023 ImAliTavakoli
+ * @license MIT
+ */
+
+
+////////////////////////////////////////////////////////////////////////////////
+/// Basics
+
+import './base';
