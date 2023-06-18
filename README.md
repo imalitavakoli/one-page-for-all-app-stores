@@ -10,7 +10,7 @@ With this Landing Page, you don't need to give your users variety of links or ge
 # Features
 
 - Built-in pre-loader.
-- **Automatically detects the user's device**, and redirects her to your app's page in App Store (if her device is IOS), or GooglePlay (if her device is Android). If user's device is not recognizable, then user won't be redirected anywhere! The page simply loads, and the user herself decides to click to go to the App Store or GooglePlay.
+- **Automatically detects the user's device**, and redirects her to your app's page in App Store (if her device is IOS), or GooglePlay (if her device is Android). If user's device is not recognizable, then user won't be redirected anywhere! The page simply loads, and user herself decides to click to go to the App Store or GooglePlay.
 - **Easy editing**. Simply edit one single *.html* file.
 - **Easy structure**. Everything is beautifully designed and ready for you. Just replace the dummy content with your own content in the *.html* file.
 - **Easy styling**. Simply change some CSS variables in the *.html* file and change the whole page's color theme and feeling.
@@ -81,7 +81,7 @@ Then, open your Terminal / Command Prompt and run the following commands.
 
 
 - Install dependencies: `npm install --global gulp-cli@2.3.0`
-- Change directory to this folder on your machine: `cd my/path/to/src`
+- Change directory to this folder on your machine: `cd my/path/to/project`
 - Run `npm install` to install all required dependencies
 
 - *Optional!* Run `npm install --save <package>` to install new frontend dependencies
