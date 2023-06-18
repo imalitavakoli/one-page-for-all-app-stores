@@ -34,6 +34,7 @@ Change the CSS variables' values under the '*Main CSS variables*' section.
     --oa-headings-color: #333;
     --oa-text-color: #333;
     --oa-text-link-color: #5c6bc0;
+    --oa-btn-color: #333;
     --oa-bg-color: #fff;
   }
 </style>
@@ -50,6 +51,7 @@ Replace the dummy content with you own content under the '*Container*' section.
     <img src="images/app-icon.png" alt="My App">
   </figure>
   <h1 class="oa-m oa-text-center">Download 'My App' today</h1>
+  <p class="oa-text-center">Lorem ipsum dolor sit <a href="#">amet consectetur</a> adipisicing elit.</p>
   ...
 </section>
 ```
