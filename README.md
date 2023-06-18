@@ -1,5 +1,7 @@
 The "**OnePage For All App Stores**" Landing Page eases your job when you have a mobile app in different app stores (e.g., App Store or GooglePlay) and like to share it with others!
 
+[Preview the Landing Page here](https://imalitavakoli.github.io/one-page-for-all-app-stores/).
+
 With this Landing Page, you don't need to give your users variety of links or generate multiple QRCodes for each versions of your app in different app stores anymore! From now on, you can simply edit this Landing Page (put your own links, app icon, and description in the page), upload it on your server, generate a single QRCode for the page, and hand it to your users. That's it!
 
 
@@ -7,6 +9,7 @@ With this Landing Page, you don't need to give your users variety of links or ge
 
 # Features
 
+- Built-in pre-loader.
 - **Automatically detects the user's device**, and redirects her to your app's page in App Store (if her device is IOS), or GooglePlay (if her device is Android). If user's device is not recognizable, then user won't be redirected anywhere! The page simply loads, and the user herself decides to click to go to the App Store or GooglePlay.
 - **Easy editing**. Simply edit one single *.html* file.
 - **Easy structure**. Everything is beautifully designed and ready for you. Just replace the dummy content with your own content in the *.html* file.
